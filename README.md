@@ -27,3 +27,9 @@ Produce either a local filesystem path or a URL if you're not sure:
 substrate$ cargo whereis --force parity-scale-codec
 https://crates.io/crates/parity-scale-codec
 ```
+
+## Installation
+
+```bash
+cargo install cargo-whereis
+```
