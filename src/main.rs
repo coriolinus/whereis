@@ -5,6 +5,12 @@ use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
 struct Opt {
+    /// Cargo subcommands get a bonus argument: the name of the subcommand.
+    ///
+    /// That's not useful for us, so we just ignore it.
+    #[structopt(hidden=true)]
+    _subcommand: String,
+
     /// Location of workspace `Cargo.toml`.
     #[structopt(long, parse(from_str))]
     manifest_path: Option<PathBuf>,
