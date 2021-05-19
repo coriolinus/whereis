@@ -1,0 +1,18 @@
+[package]
+name = "cargo-whereis"
+version = "0.1.0"
+authors = ["Peter Goodspeed-Niklaus <peter.r.goodspeedniklaus@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+cargo_metadata = "0.13.1"
+color-eyre = { version = "0.5.11", default-features = false }
+lazy_static = "1.4.0"
+pathdiff = "0.2.0"
+structopt = "0.3.21"
+thiserror = "1.0.24"
+url = "2.2.2"
+
+# always build backtrace with optimizations, even in debug builds
+[profile.dev.package.backtrace]
+opt-level = 3
