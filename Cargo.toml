@@ -4,6 +4,8 @@ version = "0.1.0"
 authors = ["Peter Goodspeed-Niklaus <peter.r.goodspeedniklaus@gmail.com>"]
 edition = "2018"
 license = "GPL-3.0-only"
+description = "Locate a crate within a workspace"
+repository = "https://github.com/coriolinus/whereis"
 
 [dependencies]
 cargo_metadata = "0.13.1"
